@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 220;
+  --purple: hsl(var(--hue), 50%, 73%);
+  --body-bg-color: hsl(var(--hue), 60%, 98%);
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 5rem;
+
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+  text-align: center;
+
+  overflow: overlay;
+
+  background-color: var(--body-bg-color);
+}
+
+#img .wrapper {
+  display: grid;
+  grid-template-areas: 'A';
+}
+
+#img .wrapper circle[stroke*='BB99DD'] {
+  stroke: var(--purple);
+}
+
+#img .wrapper .mainImg {
+  grid-area: A;
+
+  margin: 0.65rem;
+
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+#img .wrapper svg {
+  grid-area: A;
+}
+
+#img .wrapper p {
+  color: var(--purple);
+
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-style: normal;
+
+  text-align: center;
+
+  padding-top: 1.5rem;
+}
+
+#links .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  gap: 1.6rem;
+
+  padding-top: 3.3rem;
+  padding-bottom: 6.8rem;
+}
+
+#links .wrapper a {
+  border: solid var(--purple) 0.2rem;
+  border-radius: 0.5rem;
+  background: var(--body-bg-color);
+  color: var(--purple);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32.6rem;
+  height: 4.9rem;
+}
+
+#logos .wrapper {
+  display: flex;
+  flex-direction: line;
+  gap: 2.9rem;
+}
+
+#logos .wrapper a path[stroke*='BB99DD'] {
+  stroke: var(--purple);
+}
